@@ -1,0 +1,24 @@
+name: Build full offline USB package
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and verify engine, model and offline archive
+        run: python3 scripts/build_release.py
+      - name: Publish complete offline release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create v1.0.0 dist/*
+          --target "${{ github.sha }}"
+          --title "DAVA USB AI 1.0 — To‘liq oflayn paket"
+          --notes-file docs/RELEASE_NOTES.md

@@ -1,0 +1,48 @@
+DAVA USB AI — TO'LIQ TAYYOR PAKET
+================================
+
+Nega qismlarga bolingan?
+Bu yerda bitta fayl uchun 512 MB chegara bor. Haqiqiy Qwen3 4B modeli
+ichidagi paket 2.45 GB. Shuning uchun butun arxiv 5 qismga ajratilgan.
+Model kamaytirilmagan; barcha 5 qismdan toliq bir xil dastur chiqadi.
+
+1. QUYIDAGI 6 FAYLNI KOMPYUTERDA BITTA PAPKAGA YUKLANG:
+   Dava_USB_AI_Yigish.zip
+   Dava_USB_AI.zip.001
+   Dava_USB_AI.zip.002
+   Dava_USB_AI.zip.003
+   Dava_USB_AI.zip.004
+   Dava_USB_AI.zip.005
+
+Har bir qismni alohida ZIP sifatida ochmang; nomlarini ozgartirmang.
+Birinchi 4 qismning har biri 500 MB, oxirgisi taxminan 454 MB.
+
+2. Dava_USB_AI_Yigish.zip ni shu kompyuter papkasiga oching.
+   Windowsda: TAYYORLASH_WINDOWS.cmd ni ikki marta bosing.
+   Kalida: yigish papkasida terminal ochib:
+
+       bash TAYYORLASH_KALI.sh
+
+3. Dastur qismlarni tekshiradi, birlashtiradi va Dava_USB_AI papkasini chiqaradi.
+   Kompyuter diskida yigish uchun qoshimcha kamida 5.1 GB bosh joy kerak.
+   Bu bosqichni 4 GB fleshkaning ichida bajarmang.
+   Hech qanday internetga ulanish kerak emas; barcha model baytlari qismlarda bor.
+
+4. Tayyor Dava_USB_AI papkasini butunligicha fleshkaga kochiring.
+   Bosh 4 GB fleshkaga shu tayyor papka sigadi. Yigish ZIPini va 5 qismni
+   fleshkaga birga kochirmang; ular kompyuterda qolishi mumkin.
+
+5. FLESHKADAN BOSHLASH:
+   Windows 10/11 x64: BOSHLASH_WINDOWS.cmd
+   Kali/Linux x64:    bash BOSHLASH_KALI.sh
+   Brauzer ochilishini kuting. Boshlash terminalini ochiq qoldiring.
+   Tugatgach terminalda Ctrl+C bosing, keyin fleshkani xavfsiz ajrating.
+
+Tavsiya: 8 GB yoki koproq RAM, taxminan 4 GB bosh RAM; USB 3.0.
+Bu matnli oflayn AI: internet qidiruvi, rasm va ovoz tahlili kiritilmagan.
+Windows fayllari tayyorlangan, amaliy sinov Linux x64 muhitida bajarilgan.
+AI javoblarining tog'riligini mustaqil tekshiring.
+
+Qism buzilgan desa, faqat nomi ko'rsatilgan qismni qayta yuklash yetadi.
+Yigish kodi ochiq: tools papkasidagi Python va PowerShell fayllari.
+Tayyor dastur ichida batafsil AVVAL_OQING.txt va litsenziyalar bor.

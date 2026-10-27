@@ -1,0 +1,33 @@
+{
+  "archive_name": "Dava_USB_AI_Tayyor.zip",
+  "archive_size": 2454214381,
+  "archive_sha256": "eaecbfab5b355d7f0f1665f266258d35f2d46fc9c58dc6cfddae26bcdf2c6e91",
+  "folder": "Dava_USB_AI",
+  "parts": [
+    {
+      "name": "Dava_USB_AI.zip.001",
+      "size": 500000000,
+      "sha256": "877bee4183a58bff1a7c5b516b1d0b98607f422f3713669175a28f05e3f9ba88"
+    },
+    {
+      "name": "Dava_USB_AI.zip.002",
+      "size": 500000000,
+      "sha256": "988badc8d3a6ac7147515671a71ee527ae4bd8a9c51ebe3a029c8e2ad4bd6c5d"
+    },
+    {
+      "name": "Dava_USB_AI.zip.003",
+      "size": 500000000,
+      "sha256": "2d1c2fcf47de4fce8b164ba84bd09f3e0212756e91380cae060c8620a3ed0150"
+    },
+    {
+      "name": "Dava_USB_AI.zip.004",
+      "size": 500000000,
+      "sha256": "cd78c96d8f03a9642d85ba3fa8543898c8f0fcb816e118ab6e72ef44f9516465"
+    },
+    {
+      "name": "Dava_USB_AI.zip.005",
+      "size": 454214381,
+      "sha256": "35cc33482ac4872484c1f701e233300b943c7e482dc95fc4163d45c57bbd62a4"
+    }
+  ]
+}

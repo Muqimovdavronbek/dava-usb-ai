@@ -1,0 +1,88 @@
+DAVA USB AI — FLESHKADA ISHLAYDIGAN OFLAYN YORDAMCHI
+==================================================
+
+BU NIMA?
+Videodagi llamafile usuli asosida tayyorlangan matnli AI chat.
+Paket ichida haqiqiy AI dasturi ham, toliq Qwen3 4B Q4_K_M modeli ham bor.
+Modelni alohida yuklash, hisob ochish, API kaliti yoki pulli obuna kerak emas.
+O'rnatishsiz, internetga ulanmasdan savol-javob, tushuntirish, tarjima va kod.
+
+1. FLESHKAGA KO'CHIRISH
+ZIP arxivini toliq oching. Dava_USB_AI papkasini butunligicha fleshkaga ko'chiring.
+ZIP ichidan BOSHLASH faylini bevosita ishga tushirmang.
+Fleshkada kamida 3 GB bosh joy kerak; bosh 4 GB fleshkaga paket sig'adi.
+USB 3.0 tavsiya etiladi. Fleshka formatini o'zgartirish shart emas.
+
+2. WINDOWS 10/11 x64
+Dava_USB_AI papkasini oching.
+BOSHLASH_WINDOWS.cmd faylini ikki marta bosing.
+Model yuklanishini kuting. Tayyor bo'lganda chat brauzerda ochiladi.
+Terminaldagi TAYYOR qatorida manzil chiqadi: odatda http://127.0.0.1:8765/
+Brauzer avtomatik ochilmasa, terminaldagi manzilni brauzerga kiriting.
+Ishlayotganida terminal oynasini ochiq qoldiring.
+Oddiy foydalanuvchi huquqi yetadi. Korxona kompyuterida dastur ishga tushirish
+cheklangan bo'lsa, tizim administratorining belgilagan tartibiga amal qiling.
+
+3. KALI LINUX / LINUX x64
+Dava_USB_AI papkasida terminal oching va quyidagi buyruqni bajaring:
+
+    bash BOSHLASH_KALI.sh
+
+Yoki terminalga quyidagini yozib, keyin BOSHLASH_KALI.sh faylini terminalga
+sudrab tashlang va Enter bosing:
+
+    bash
+
+Kali Linuxdagi Python 3 ishlatiladi. pip, Node, Docker, Ollama kerak emas.
+Fleshka noexec bilan ulangan bo'lsa ham, 'bash' orqali boshlang: dastur
+vaqtinchalik mahalliy nusxadan ochiladi, katta model fleshkada qoladi.
+
+4. ISHLATISH
+Brauzerdagi oynaga savol yozing. Enter — yuborish. Shift+Enter — yangi satr.
+To'xtatish tugmasi hozirgi javobni to'xtatadi.
+Yangi suhbat tugmasi joriy suhbatni tozalaydi; keraklisini avval saqlang.
+Javoblar CPUda hisoblanadi: kompyuter tezligiga qarab kutish vaqti o'zgaradi.
+Model yuklanayotganda bir necha daqiqa kutish USB 2.0 da odatiy holat.
+
+5. SUHBATNI BOSHQA KOMPYUTERGA OLIB O'TISH
+Suhbatlar shu brauzerning mahalliy xotirasida saqlanadi, avtomatik ravishda
+fleshkaga yozilmaydi. 'Suhbatni saqlash' tugmasini bosing va JSON faylni
+fleshkaga saqlang. Boshqa kompyuterda 'Suhbatni ochish' orqali JSONni tanlang.
+Umumiy kompyuterda tugatgach, kerakli suhbatni saqlab 'Yangi suhbat'ni bosing.
+Uzoq suhbatda modelga oxirgi xabarlar uzatiladi; qolganlari ekranda saqlanadi.
+
+6. TUGATISH
+Ishga tushirilgan terminalda Ctrl+C bosing.
+Dastur yopilgach fleshkani xavfsiz ajrating. Ishlayotganida fleshkani sug'urmang.
+
+TALABLAR VA CHEGARALAR
+- 64-bit Intel/AMD kompyuter, Windows 10/11 x64 yoki Kali/Linux x64.
+- Tavsiya: 8 GB va undan kop RAM; model uchun taxminan 4 GB bosh RAM ajrating.
+- Yangiroq Firefox, Chrome yoki Edge brauzeri.
+- Linuxda Bash, Python 3 va gzip/dd kabi odatiy tizim vositalari.
+- Faqat matn: bu paket rasm, mikrofon, videoni tahlil qilmaydi.
+- Internetda qidirmaydi va bulutdagi ChatGPT modelini ishlatmaydi.
+- AI noto'g'ri javob berishi mumkin. Muhim faktlarni mustaqil tekshiring.
+- Windowsda ishga tushirish fayli tayyorlangan; bu paketning amaliy sinovi
+  Linux x64 muhitida bajarilgan. Har bir kompyuterda xatosiz ishlashi kafolatlanmaydi.
+
+XATO BO'LSA
+- Model topilmadi: ZIPdan hamma papkalarni birga ochganingizni tekshiring.
+- AI ochilmadi: boshqa og'ir dasturlarni yoping va bosh RAMni oshiring.
+- Fleshka nusxasi buzilgan deb o'ylasangiz, TEKSHIRISH faylini bajaring.
+- Server o'chgan: BOSHLASH terminali ochiqligini tekshiring.
+- logs papkasida shu ishga tushirishning texnik xabarlari yoziladi.
+- Model, bin va web papkalarining nomini o'zgartirmang.
+
+VERSIYALAR VA MANBALAR
+Interfeys va boshlash fayllari: DAVA USB AI 1.0.
+AI dvigateli: mozilla-ai/llamafile 0.10.6-thin (CPU), o'zgartirilmagan rasmiy fayl.
+https://github.com/mozilla-ai/llamafile/releases/tag/0.10.6
+Model: Qwen/Qwen3-4B-GGUF, Qwen3-4B-Q4_K_M.gguf, rasmiy Qwen modeli.
+https://huggingface.co/Qwen/Qwen3-4B-GGUF
+Videoda Thinking-2507 ishlatilgan. Bu paketda tezkor umumiy chat va
+kamroq kutish uchun fikrlash rejimini o'chirish mumkin bo'lgan Qwen3 4B tanlangan.
+Litsenziyalar: licenses papkasida. Dastur va model egalariga tegishli.
+Yangi boshlash fayllari va interfeys MIT litsenziyasida.
+
+Dava Developer — DAVA USB AI

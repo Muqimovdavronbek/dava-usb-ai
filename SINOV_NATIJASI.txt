@@ -1,0 +1,16 @@
+DAVA USB AI 1.0 — TEKSHIRUV NATIJASI
+
+Linux x64 muhitida tekshirildi:
+- BOSHLASH_KALI.sh orqali haqiqiy Qwen3 4B modeli yuklandi.
+- Modelning nazorat summasi rasmiy Qwen fayliga mos.
+- llamafile dasturining nazorat summasi rasmiy 0.10.6-thin fayliga mos.
+- Haqiqiy modelga '2 + 2' savoli berildi: javob '4'.
+- Chat interfeysi orqali o'zbekcha salomlashish soraldi: javob 'Salom!'.
+- Javobni bosqichma-bosqich chiqarish, toxtatish, uzoq xabarni tekshirish ishladi.
+- Suhbatning brauzer xotirasida saqlanishi, JSONga chiqarish va ochish tekshirildi.
+- Chat ilovasidan tashqi manzillarga internet sorovi yuborilmadi.
+- Ctrl+C bilan modelni toxtatish tekshirildi.
+
+Windows boshlash va tekshirish fayllari ham paketda mavjud.
+Windowsning ozida amaliy ishga tushirish sinovi bajarilmadi.
+Ushbu sinovlar barcha qurilmalarda xatosiz ishlash kafolati emas.

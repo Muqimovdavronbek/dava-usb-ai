@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23e77e45'/%3E%3Cpath d='M19 16h12c22 0 22 32 0 32H19z' fill='none' stroke='white' stroke-width='6'/%3E%3C/svg%3E">
+  <title>DAVA USB AI — Oflayn yordamchi</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="DAVA USB AI bosh sahifa"><span class="brand-icon">D</span><span>DAVA<span class="brand-small">USB AI / 01</span></span></a>
+    <div class="side-intro">Siz bilan yuradigan<br>sun’iy intellekt.</div>
+    <button class="new-chat" id="new-chat"><span>＋</span> Yangi suhbat</button>
+    <div class="side-label">ISH MAYDONI</div>
+    <div class="active-nav"><span>◉</span> AI bilan suhbat <span class="nav-dot"></span></div>
+    <button class="side-action" id="export-chat"><span>↓</span> Suhbatni saqlash</button>
+    <button class="side-action" id="import-chat"><span>↑</span> Suhbatni ochish</button>
+    <input id="import-file" type="file" accept="application/json,.json" hidden>
+    <div class="model-card"><div class="model-top"><span class="mini-square">Q</span> Qwen3 <span class="tag">4B</span></div><p>Model fleshkangizda.<br>Hisoblash kompyuteringizda.</p><div class="model-bottom"><span>Q4_K_M</span><span>CPU MODE</span></div></div>
+    <button class="help-link" id="help">ⓘ &nbsp; Ishlatish bo‘yicha yordam</button>
+    <div class="signature">Dava Developer <span>PORTABLE EDITION</span></div>
+  </aside>
+  <main>
+    <header class="topbar"><div><span class="mobile-brand">DAVA USB AI</span><span class="workspace-name">Shaxsiy yordamchi</span><span class="divider">/</span><span class="muted">Suhbat</span></div><div class="status" id="status" role="status"><span class="status-dot"></span><span id="status-text">Ulanmoqda</span></div></header>
+    <div class="privacy"><svg width="15" height="17" viewBox="0 0 18 20" fill="none" aria-hidden="true"><path d="M9 1 2 4v5c0 5 7 9 7 9s7-4 7-9V4L9 1Z" stroke="currentColor" stroke-width="1.5"/><path d="m6 9 2 2 4-4" stroke="currentColor" stroke-width="1.5"/></svg><span>Internet kerak emas. Xabarlaringiz shu kompyuterda qayta ishlanadi.</span><span class="privacy-mark">LOCAL FIRST</span></div>
+    <section class="conversation" id="conversation" aria-label="Suhbat">
+      <div class="welcome" id="welcome"><div class="eyebrow"><span></span> FLESHKADAGI SHAXSIY YORDAMCHI</div><h1>Fikr sizdan.<br><span>Yordam mendan.</span></h1><p>Savol bering, kod yozing yoki biror mavzuni tushuning.<br>Hammasi shu yerda — internetga ulanmasdan.</p><div class="suggestions">
+        <button data-prompt="Diskret matematika dasturlashda qanday ishlatiladi? Oddiy misol bilan o‘zbekcha tushuntir."><span class="suggestion-icon">↗</span><strong>Mavzuni tushunish</strong><small>Murakkab fikrlarni oddiy tilda</small></button>
+        <button data-prompt="Python’da ikki sonni qo‘shadigan sodda dastur yoz va har bir satrini o‘zbekcha tushuntir."><span class="suggestion-icon">&lt;/&gt;</span><strong>Kod bilan ishlash</strong><small>Misol, izoh va yangi g‘oyalar</small></button>
+        <button data-prompt="Ingliz tilini o‘rganish uchun kuniga 30 daqiqalik 7 kunlik sodda reja tuz."><span class="suggestion-icon">☷</span><strong>Reja tuzish</strong><small>Vazifalarni tartibga keltirish</small></button>
+      </div><div class="welcome-note"><span class="small-diamond">◇</span> Bitta fleshka. O‘z yordamchingiz. Istalgan joyda.</div></div>
+      <div class="messages" id="messages" aria-live="polite" aria-relevant="additions"></div>
+    </section>
+    <div class="composer-wrap"><div class="notice" id="notice" role="status" hidden></div><form id="chat-form"><label class="sr-only" for="prompt">Xabaringiz</label><textarea id="prompt" maxlength="12000" rows="2" placeholder="Nimani bilmoqchisiz?" aria-describedby="composer-note"></textarea><div class="composer-tools"><div class="mode"><span class="mode-dot"></span> Oflayn chat <span class="mode-model">· Qwen3 4B</span></div><button type="button" id="stop" hidden>■ &nbsp; To‘xtatish</button><button class="send" id="send" type="submit" disabled><span>Yuborish</span><svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 16V4m-5 5 5-5 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div></form><div class="composer-note" id="composer-note"><span>Enter — yuborish &nbsp;·&nbsp; Shift + Enter — yangi satr</span><span>AI javoblarini tekshiring.</span></div></div>
+  </main>
+  <dialog id="help-dialog"><button class="dialog-close" id="close-help" aria-label="Yopish">×</button><div class="eyebrow">BOSHLASH OSON</div><h2>Oflayn yordamchingiz tayyor.</h2><ol><li>ZIPni to‘liq ochib, <b>Dava_USB_AI</b> papkasini fleshkaga ko‘chiring.</li><li>Windows’da <b>BOSHLASH_WINDOWS.cmd</b> faylini oching. Kali’da terminaldan <code>bash BOSHLASH_KALI.sh</code> buyrug‘ini bajaring.</li><li>Model yuklangach, mana shu oynada yozing. Ishlatish vaqtida terminalni ochiq qoldiring.</li><li>Tugatgach terminalda <b>Ctrl+C</b> bosing, keyin fleshkani xavfsiz ajrating.</li></ol><p><b>Talab:</b> Windows 10/11 x64 yoki Kali/Linux x64, tavsiya etiladi 8 GB va undan ko‘p RAM, fleshkada kamida 3 GB bo‘sh joy. USB 3.0 tezroq ochadi.</p><p><b>Suhbatlar:</b> shu brauzer xotirasida saqlanadi. Boshqa kompyuterga olib o‘tish uchun “Suhbatni saqlash” orqali JSONni fleshkaga yozing, keyin “Suhbatni ochish”dan foydalaning.</p><p><b>Model:</b> faqat matnli Qwen3 4B. Internetdan qidirmaydi. CPU tezligiga qarab javob bir oz kutiladi. Uzun suhbatlarda modelga oxirgi xabarlar uzatiladi.</p></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>
