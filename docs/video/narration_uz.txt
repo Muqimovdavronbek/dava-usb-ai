@@ -1,0 +1,32 @@
+Fleshkadagi shaxsiy AI
+Assalomu alaykum. Bu videoda Dava USB AI dasturini yuklab, qismlarni birlashtirib, fleshkadan ishga tushiramiz. Paket ichida haqiqiy Qwen uch, to‘rt milliard parametrli model bor. Tayyor bo‘lgandan keyin ishlatish uchun internet, API kaliti yoki obuna kerak emas.
+
+Rasmiy dastur manzili
+Avval manbalarni ko‘ring. Dastur dvigateli Mozilla llamafile loyihasidan olingan. Rasmiy sayt manzili ekranning yuqorisida yozilgan. Bizning tayyor paketimizda shu dasturning tekshirilgan nusxasi mavjud. Uni qaytadan qo‘lda sozlashingiz shart emas.
+
+Rasmiy AI model manzili
+AI modelining rasmiy sahifasi Hugging Face saytida. Manzil ekranda to‘liq ko‘rsatilgan. To‘rt bitli Q to‘rt, K, M modeli taxminan ikki yarim gigabayt. Biz modelni paketga to‘liq qo‘shamiz. Bu bulutdagi ChatGPT emas, kompyuteringizning o‘zida hisoblaydigan yordamchi.
+
+GitHub’dan tayyor paketni olish
+Endi mening GitHub repository sahifamga kiring. Manzil yuqorida aniq yozilgan. To‘liq dasturni olish uchun Releases bo‘limini oching. Code tugmasidagi Download ZIP faqat kodlarni beradi, katta AI modeli unda bo‘lmaydi. Tayyor model bilan ishlash uchun release fayllari kerak.
+
+Barcha fayllar bitta papkada
+Release ichidagi yig‘ish ZIPini va nuqta nol nol birdan nol nol beshgacha bo‘lgan barcha besh qismni yuklang. Ularning hammasi kompyuterda bitta papkada tursin. Qismlarning nomini o‘zgartirmang va ularni alohida ZIP kabi ochmang. Faqat Yigish deb nomlangan kichik ZIPni ochasiz.
+
+Kali Linux’da qismlarni birlashtirish
+Kali Linuxda ochilgan yig‘ish papkasida terminal oching. Ekrandagi bash TAYYORLASH KALI buyrug‘ini yozing va Enter bosing. Dastur barcha qismlarning nazorat summasini tekshiradi, ularni birlashtiradi va to‘liq Dava USB AI papkasini chiqaradi. Yig‘ishni kompyuter diskida bajaring. Qo‘shimcha kamida besh butun o‘ndan bir gigabayt bo‘sh joy kerak.
+
+Tayyor papkani fleshkaga ko‘chirish
+Endi hosil bo‘lgan Dava USB AI papkasini butunligicha fleshkaga ko‘chiring. Model, bin va web papkalari birga qolishi kerak. Tayyor papka bo‘sh to‘rt gigabaytli fleshkaga sig‘adi. Yig‘ish ZIPi va besh qismni fleshkaga birga joylash shart emas. Ular kompyuterda qoladi.
+
+Fleshkadan ishga tushirish
+Fleshkadagi tayyor papkada terminal oching. Bash BOSHLASH KALI buyrug‘ini bajaring. Model yuklanishini kuting. Fleshka tezligiga qarab bu bir necha daqiqa olishi mumkin. Terminalda TAYYOR yozuvi chiqqach, brauzer ochiladi. Odatdagi manzil ekranda: yuz yigirma yetti, nol, nol, bir, port sakkiz ming yetti yuz oltmish besh.
+
+Haqiqiy modeldan javob olish
+Mana dastur oynasi. Sinovda ikki qo‘shilgan ikki savoliga model to‘rt deb javob berdi. Keyin Python kodi ham yozib berdi. Savolni pastga yozib, Yuborish tugmasini bosing. Enter xabar yuboradi, Shift bilan Enter yangi satr ochadi. Hisoblash kompyuterning protsessorida bajariladi. Muhim javoblarni tekshirib oling.
+
+Windows’da ishlatish
+Windowsda yig‘ish uchun TAYYORLASH WINDOWS faylini ikki marta bosing. Tayyor papkani fleshkaga ko‘chirgach, BOSHLASH WINDOWS faylini oching. Bu qismda ekranda kerakli fayl nomlari ko‘rsatilgan. Windowsning o‘zida amaliy sinov bajarilmagan. Haqiqiy javob olish sinovi Linuxda bajarilgan.
+
+Suhbatni saqlash va ishni tugatish
+Suhbatni boshqa kompyuterga olib o‘tish uchun Suhbatni saqlash tugmasidan JSON fayl oling va uni fleshkaga yozing. Boshqa kompyuterda Suhbatni ochish orqali shu faylni tanlaysiz. Ishlayotganda terminal ochiq tursin. Tugatgach terminalda Control bilan C tugmalarini bosing, keyin fleshkani xavfsiz ajrating. Tavsiya: sakkiz gigabayt yoki ko‘proq operativ xotira.

@@ -1,10 +1,22 @@
 # DAVA USB AI
 
+![DAVA USB AI](docs/images/cover.svg)
+
 Fleshkadan ishlaydigan shaxsiy oflayn AI chat. O‘zbekcha interfeys, haqiqiy Qwen3 4B modeli, Kali/Linux va Windows boshlash fayllari.
 
 **[To‘liq tayyor paketni yuklash → Releases](https://github.com/Muqimovdavronbek/dava-usb-ai/releases)**
 
 Model va dastur to‘liq release paketida mavjud. GitHub’dagi **Code → Download ZIP** faqat dastur kodlarini yuklaydi; katta modelni o‘z ichiga olmaydi.
+
+## Video va rasmlar
+
+[O‘zbekcha ovozli videoqo‘llanma](docs/video/Dava_USB_AI_Video_Qollanma.mp4) · [Qadamlar va manzillar](docs/QUICKSTART_UZ.md) · [Subtitrlar](docs/video/Dava_USB_AI_Qollanma.srt)
+
+![Dastur oynasi](docs/images/chat-start.png)
+
+![Haqiqiy modeldan kod olish](docs/images/chat-code.png)
+
+Videoda rasmiy saytlar, GitHub yuklama sahifasi, buyruqlar va haqiqiy modeldan olingan javoblar ko‘rsatiladi. Ovoz sun’iy. Windows bo‘limi yo‘riqnoma sifatida berilgan.
 
 ## Boshlash
 

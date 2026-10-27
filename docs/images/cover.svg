@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640">
+  <rect width="1600" height="640" rx="24" fill="#192a31"/>
+  <circle cx="1380" cy="120" r="310" fill="#263e45"/>
+  <circle cx="1380" cy="120" r="215" fill="none" stroke="#3c565a" stroke-width="2"/>
+  <circle cx="1380" cy="120" r="150" fill="none" stroke="#55706c" stroke-width="2"/>
+  <rect x="84" y="75" width="74" height="78" rx="21" fill="#df8251"/>
+  <text x="103" y="132" font-family="Arial,sans-serif" font-size="60" font-weight="700" fill="white">D</text>
+  <text x="185" y="125" font-family="Arial,sans-serif" font-size="43" font-weight="700" letter-spacing="4" fill="#f1f3ed">DAVA USB AI</text>
+  <text x="86" y="245" font-family="Arial,sans-serif" font-size="20" letter-spacing="5" fill="#a5bcb3">FLESHKADAGI SHAXSIY YORDAMCHI</text>
+  <text x="80" y="350" font-family="Arial,sans-serif" font-size="83" font-weight="700" fill="#f0f3ec">Model yoningizda.</text>
+  <text x="80" y="450" font-family="Arial,sans-serif" font-size="83" font-weight="700" fill="#9eb8a8">Internet shart emas.</text>
+  <rect x="86" y="515" width="165" height="46" rx="12" fill="#344a4e"/>
+  <rect x="272" y="515" width="245" height="46" rx="12" fill="#344a4e"/>
+  <rect x="539" y="515" width="245" height="46" rx="12" fill="#344a4e"/>
+  <text x="111" y="546" font-family="Arial,sans-serif" font-size="22" fill="#d5e3d9">Qwen3 4B</text>
+  <text x="299" y="546" font-family="Arial,sans-serif" font-size="22" fill="#d5e3d9">Kali / Linux x64</text>
+  <text x="567" y="546" font-family="Arial,sans-serif" font-size="22" fill="#d5e3d9">Windows x64</text>
+  <text x="1270" y="555" font-family="Arial,sans-serif" font-size="21" fill="#8ca6a8">Dava Developer</text>
+</svg>
