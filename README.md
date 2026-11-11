@@ -1,59 +1,52 @@
 # DAVA USB AI
 
+**A local text assistant designed to travel with your USB drive.**
+
 ![DAVA USB AI](docs/images/cover.svg)
 
-Fleshkadan ishlaydigan shaxsiy oflayn AI chat. O‘zbekcha interfeys, haqiqiy Qwen3 4B modeli, Kali/Linux va Windows boshlash fayllari.
+[Download the complete package](https://github.com/Muqimovdavronbek/dava-usb-ai/releases) · [Quick start](docs/QUICKSTART.md)
 
-**[To‘liq tayyor paketni yuklash → Releases](https://github.com/Muqimovdavronbek/dava-usb-ai/releases)**
+## Features
 
-Model va dastur to‘liq release paketida mavjud. GitHub’dagi **Code → Download ZIP** faqat dastur kodlarini yuklaydi; katta modelni o‘z ichiga olmaydi.
+- Local Qwen3 4B text generation on the computer's CPU.
+- Launch scripts for Linux x64 and Windows 10/11 x64.
+- Streaming responses, stop control and conversation reset.
+- JSON conversation export/import for moving between computers.
+- Loopback-only server and no cloud API requirement during use.
 
-## Video va rasmlar
+![Chat window](docs/images/chat-start.png)
 
-[O‘zbekcha ovozli videoqo‘llanma](docs/video/Dava_USB_AI_Video_Qollanma.mp4) · [Qadamlar va manzillar](docs/QUICKSTART_UZ.md) · [Subtitrlar](docs/video/Dava_USB_AI_Qollanma.srt)
+![Code response](docs/images/chat-code.png)
 
-![Dastur oynasi](docs/images/chat-start.png)
+## Download and start
 
-![Haqiqiy modeldan kod olish](docs/images/chat-code.png)
+1. Download `Dava_USB_AI_Yigish.zip` and all five `.001`–`.005` parts from Releases into one directory.
+2. Extract the assembly ZIP.
+3. Run `bash TAYYORLASH_KALI.sh` on Linux or `TAYYORLASH_WINDOWS.cmd` on Windows.
+4. Copy the complete generated `Dava_USB_AI` directory to the USB drive.
+5. Run `bash BOSHLASH_KALI.sh` or `BOSHLASH_WINDOWS.cmd`.
+6. Wait for the ready message and use the browser address printed by the launcher, normally `http://127.0.0.1:8765/`.
 
-Videoda rasmiy saytlar, GitHub yuklama sahifasi, buyruqlar va haqiqiy modeldan olingan javoblar ko‘rsatiladi. Ovoz sun’iy. Windows bo‘limi yo‘riqnoma sifatida berilgan.
+The complete model is supplied in release assets. **Code → Download ZIP** contains the source, not the model.
 
-## Boshlash
+## Requirements
 
-1. Releases sahifasidan `Dava_USB_AI_Yigish.zip` va `.001` dan `.005` gacha barcha 5 qismni kompyuterda bir papkaga yuklang.
-2. Yig‘ish ZIPini oching. Kali’da `bash TAYYORLASH_KALI.sh`, Windows’da `TAYYORLASH_WINDOWS.cmd`ni bajaring.
-3. Chiqqan **Dava_USB_AI** papkasini butunligicha fleshkaga ko‘chiring.
-4. Kali’da `bash BOSHLASH_KALI.sh`, Windows’da `BOSHLASH_WINDOWS.cmd`ni ishga tushiring.
-5. Terminalda `TAYYOR` yozuvi chiqqach, chat brauzerda ochiladi. Odatdagi manzil: `http://127.0.0.1:8765/`.
+| Component | Requirement |
+| --- | --- |
+| Architecture | Intel/AMD x64 |
+| Memory | 8 GB recommended; roughly 4 GB free for the model |
+| USB space | At least 3 GB free |
+| Assembly space | Approximately 5.1 GB on the computer |
+| Browser | A recent Firefox, Chrome or Edge |
 
-Qismlarning nazorat summalari avtomatik tekshiriladi. Qo‘shimcha model, API kaliti, obuna yoki dastur o‘rnatish kerak emas. Kali’dagi Python 3, Windows’dagi PowerShell ishlatiladi.
+## Usage and storage
 
-## Talablar
+Type a message and press Enter; Shift+Enter inserts a new line. Keep the launcher terminal open. Export conversations to JSON before moving to another computer; browser storage is not automatically written to the USB drive.
 
-| Narsa | Talab |
-|---|---|
-| Tizim | Intel/AMD x64, Kali/Linux yoki Windows 10/11 |
-| Operativ xotira | 8 GB yoki ko‘proq tavsiya, taxminan 4 GB bo‘sh RAM |
-| Fleshka | Tayyor papka uchun kamida 3 GB bo‘sh joy, bo‘sh 4 GB fleshkaga sig‘adi |
-| Yig‘ish joyi | Kompyuter diskida qo‘shimcha 5.1 GB |
-| Brauzer | Yangiroq Firefox, Chrome yoki Edge |
+This model processes text only. It does not search the web or analyze audio/images. Stop the launcher with `Ctrl+C` before removing the drive.
 
-## Suhbat va maxfiylik
+## Validation and license
 
-Model shu kompyuterning CPU’sida hisoblaydi. Server faqat `127.0.0.1`ga ulanadi. Chat internetga so‘rov yubormaydi. Suhbatlar joriy brauzer xotirasida turadi; boshqa kompyuterga ko‘chirish uchun JSON eksport/import tugmalaridan foydalaning.
+Earlier live model checks were performed on Linux x64. Windows launchers were prepared but were not validated on native Windows in that environment.
 
-Model faqat matnni tushunadi. Internetdan qidirmaydi, rasm va ovozni tahlil qilmaydi. AI javoblarini tekshiring. Tugatgach terminalda `Ctrl+C` bosing, so‘ng fleshkani xavfsiz ajrating.
-
-## Sinov
-
-Linux x64 muhitida haqiqiy model bilan ishga tushirish, o‘zbekcha javob, oqimli chiqarish, suhbat eksport/importi va to‘xtatish tekshirildi. Windows boshlash fayllari tayyorlangan; Windowsning o‘zida sinov bajarilmagan.
-
-## Manbalar va litsenziya
-
-- [Mozilla llamafile 0.10.6](https://github.com/mozilla-ai/llamafile/releases/tag/0.10.6)
-- [Rasmiy Qwen3-4B-GGUF](https://huggingface.co/Qwen/Qwen3-4B-GGUF)
-- Model commit: `bc640142c66e1fdd12af0bd68f40445458f3869b`
-- Yangi interfeys va boshlash fayllari: MIT, Dava Developer.
-- Asosiy dvigatel, model va bog‘liqliklar o‘z litsenziyalarini saqlaydi: [licenses](licenses).
-
-Release GitHub Actions orqali rasmiy manbalardan nazorat summalarini tekshirgan holda quriladi. Model repo tarixiga qo‘shilmaydi; barcha model baytlari release fayllarida mavjud.
+Original interface and launch scripts: MIT. Engine, model and dependencies retain their existing [license notices](licenses).

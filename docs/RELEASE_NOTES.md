@@ -1,34 +1,21 @@
-# DAVA USB AI 1.0 — To‘liq oflayn paket
+# DAVA USB AI 1.0
 
-Haqiqiy Qwen3 4B Q4_K_M modeli va llamafile 0.10.6-thin ichida. Ishlatish vaqtida internet yoki API kaliti kerak emas.
+Complete offline text package with Qwen3 4B Q4_K_M and llamafile 0.10.6-thin.
 
-## Yuklash va tayyorlash
+## Assembly
 
-Quyidagi 6 faylni kompyuterda **bitta papkaga** yuklang:
+Download the assembly ZIP and all five numbered parts into one directory. Run the platform-specific preparation script and allow its integrity checks to finish. Copy the generated `Dava_USB_AI` folder as a unit.
 
-- `Dava_USB_AI_Yigish.zip`
-- `Dava_USB_AI.zip.001`
-- `Dava_USB_AI.zip.002`
-- `Dava_USB_AI.zip.003`
-- `Dava_USB_AI.zip.004`
-- `Dava_USB_AI.zip.005`
+## Launch
 
-Faqat `Dava_USB_AI_Yigish.zip`ni oching. Qismlarni alohida ZIP kabi ochmang.
+Linux: `bash BOSHLASH_KALI.sh`.
 
-- Kali: `bash TAYYORLASH_KALI.sh`
-- Windows: `TAYYORLASH_WINDOWS.cmd`
+Windows: `BOSHLASH_WINDOWS.cmd`.
 
-Yig‘ish dasturi har bir qismning SHA-256 summasini tekshiradi va to‘liq `Dava_USB_AI` papkasini chiqaradi. Shu papkani fleshkaga ko‘chiring.
+Use the address shown in the terminal, normally `http://127.0.0.1:8765/`. Keep that terminal open and stop it with `Ctrl+C`.
 
-## Fleshkadan ishlatish
+## Storage and scope
 
-- Kali/Linux x64: `bash BOSHLASH_KALI.sh`
-- Windows 10/11 x64: `BOSHLASH_WINDOWS.cmd`
+Conversation history is browser-local. Use JSON export/import to transfer it. Generation runs on the local CPU without a cloud API. Text-only model responses need independent verification.
 
-Brauzer odatda `http://127.0.0.1:8765/` manzilida ochiladi. Port band bo‘lsa, terminalda ko‘rsatilgan manzilni ishlating. Terminalni ochiq qoldiring. Tugatgach `Ctrl+C` bosing.
-
-Bo‘sh 4 GB fleshka, kamida 8 GB RAM tavsiya etiladi. Yig‘ish paytida kompyuter diskida qo‘shimcha 5.1 GB joy kerak. Model matn bilan ishlaydi; internetdan qidirmaydi. Suhbatlar brauzerda saqlanadi, ko‘chirish uchun JSON eksport/import bor.
-
-Linux x64 muhitida haqiqiy javob olish tekshirildi. Windows boshlash fayllari mavjud, Windowsning o‘zida amaliy sinov bajarilmagan. AI javoblarini tekshiring.
-
-Mozilla, Qwen, llama.cpp va Cosmopolitan manbalari va litsenziyalari paketdagi `licenses` papkasida saqlangan.
+Linux model operation was tested in the earlier preparation environment. Native Windows operation remains unverified. Existing engine/model license files remain in `licenses/`.
